@@ -1,5 +1,4 @@
 
-
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -10,7 +9,7 @@ LOCAL_MODULE:= libqsap_sdk
 
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_CFLAGS += -DSDK_VERSION=\"0.0.1.0\"
+LOCAL_CFLAGS += -fno-strict-aliasing -DSDK_VERSION=\"0.0.1.0\"
 
 ifdef WIFI_DRIVER_MODULE_PATH
 LOCAL_CFLAGS += -DWIFI_DRIVER_MODULE_PATH=\"$(WIFI_DRIVER_MODULE_PATH)\"
